@@ -81,6 +81,18 @@ img{
   width: 100px;
 }
 
+.navbar-toggler span {
+    color: #b3ccff;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
 .navbar.compressed .navbar-brand{
   width: 70px;
   -webkit-transition: all .5s ease;
@@ -554,6 +566,11 @@ footer a:hover{
 @media screen and (max-width: 768px){
     .navbar-brand{
       width: 80px;
+    }
+    
+    .navbar-toggler.compressed span {
+        /*overwriting*/
+        color: #0099cc;
     }
 
     .hero-caption{
