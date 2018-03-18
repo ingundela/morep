@@ -666,18 +666,71 @@ footer a:hover{
     .top-header-box h2{
         font-size: 2rem !important;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
+
+/*---Page Preloading---*/
+
+.spinner-ctn{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    z-index: 999999;
+    text-align: center;
+}
+
+.no-scroll{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spinner{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    margin: 400px auto;
+}
+
+.spinner h6{
+    color: #fff;
+}
+
+.spinner div{
+    height: 100%;
+    width: 6px;
+    background-color: #fff;
+    display: inline-block;
+    animation: animeDiv 1.2s infinite ease-in-out;
+}
+
+@keyframes animeDiv{
+    0%, 40%, 100%{
+        transform: scaleY(0.4);
+    } 20%{
+        transform: scaleY(1);
+    }
+}
+
+.spinner .rectagle2{
+    animation-delay: -1.1s;
+}
+
+.spinner .rectagle3{
+    animation-delay: -1.0s;
+}
+
+.spinner .rectagle4{
+    animation-delay: -0.9s;
+}
+
+.spinner .rectagle5{
+    animation-delay: -0.8s;
+}
+
+
+
    
 
 
