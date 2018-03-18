@@ -1,0 +1,692 @@
+
+html,
+body{
+    font-family: 'Lato', sans-serif!important;
+    color: #333 !important;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+p,li{
+    font-size: 1rem !important;
+    display: block;
+    font-weight: 300;
+    line-height: 1.7;  
+    color: #333 !important;
+}
+
+a{
+    color: #333 !important;
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+h2{
+    font-size: 2.7rem!important;
+    color: #0d0d0d!important;
+    font-weight: 300 !important;
+    font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+}
+
+.hero-caption h1:after{
+ content:'';
+  display:block;
+  height: 0.2em;  
+  width:80px;
+  border-bottom: 5px solid #e60000;
+  padding-top: 1%;
+ }
+
+.h2:after{
+ content:'';
+  display:block;
+  height: 0.2em;  
+  width:50px;
+  margin:auto;
+  border-bottom: 1px solid #cccccc;
+  padding-top: 1%;
+ }
+
+.top-header-box h2:after{
+    content:'';
+  display:block;
+  height: 0.2em;  
+  width:80px;
+  margin:auto;
+  border-bottom: 3px solid #e60000;
+  padding-top: 1%;
+}
+
+ h3{
+    font-size: 1rem!important;
+    margin-top: 15px!important;
+    text-transform: uppercase;
+ }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/*--- Navigation ---*/
+.navbar-brand{
+  width: 100px;
+}
+
+.navbar.compressed .navbar-brand{
+  width: 70px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.navbar {
+  padding: 30px 0 !important;
+  z-index: 999;
+  background-color: none;
+
+}
+
+.navbar.compressed {
+  padding: 5px 0 !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  background-color: #fff !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff!important;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    margin-right: 10px;
+}
+.navbar.compressed.navbar-light .navbar-nav .nav-link {
+    font-size: 0.8375rem;
+    color: #006699!important;
+    font-weight: 400;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 1px solid #fff!important;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.navbar-light.compressed .navbar-nav .nav-link:hover{
+    border-bottom: 1px solid rgba(0, 81, 153, .8)!important;
+    
+}
+
+.navbar-light .navbar-nav .active{
+    border-bottom: 1px solid #fff !important;
+}
+
+.navbar-toggler-icon .navbar-collapse:hover,
+.navbar-toggle-icon .navbar-collapse:focus {
+  background-color: #fff!important;
+  color: #fff!important;
+}
+
+/*--hero-image--*/
+#hero{
+    background: url('../img/hero-people.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+#hero .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 102,.7);
+    z-index: 2;
+}
+
+.hero-caption{
+    max-width: 60rem;
+    position: relative;
+}
+.hero-caption h1{
+    font-size: 4rem;
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    color: #e6e6e6;
+    font-weight: 700;
+    font-family: "SamsungSharpSans", arial; !important;
+}
+
+#hero .btn-primary{
+  color: #fff !important;
+  float: left;
+  margin:20px 0;
+  position: relative;
+  padding: 10px 50px;
+  font-weight: 300 !important;
+  z-index: 3;
+  font-size: 1.5rem;
+  border: 1px solid #fff !important;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#hero .btn-primary{
+  background: transparent !important;
+  font-weight: 600;
+}
+
+#hero .btn-primary:hover{
+  background: #fff !important;
+  color: #000!important;
+}
+
+.btn.btn-primary:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+
+/*--services--*/
+
+.services{
+    padding: 120px 0;
+}
+
+.services .box{
+    border-right: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+}
+
+.services h2, .services p{
+    padding: 0 20px;
+}
+
+.services .top{
+    margin-top: 10px;
+}
+
+.services img{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services .btn-primary{
+    background-color: transparent !important;
+    color: #262626;
+    font-weight: 400;
+    border: 1px solid #e60000!important;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.services .btn-primary:hover{
+    background-color: #e60000!important;
+    color: #fff !important;
+}
+
+.btn.btn-primary:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+/*--vodacom--*/
+
+.vodacom{
+    padding: 120px 0;
+    background-color: #f7f7f7;
+}
+
+.vodacom .vodacom-p{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.vodacom span{
+    font-weight: 700;
+}
+
+.vodaBox{
+    padding:0 40px;
+}
+
+.vodacom h2{
+    font-size: 2.5rem !important;
+}
+.voda-mid{
+    margin-top: 60px;
+}
+
+.voda_voice{
+    margin-top: 30px;
+}
+
+.voda-left{
+    background: url('../img/christmasshopping.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.voice .voda-left{
+    background: url('../img/kids-phones-header.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.voda-right{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.voda-right p{
+    font-size: 1.1rem !important;
+}
+
+.voda-down{
+    margin-top: 40px;
+}
+
+.voda-down i{
+    color: #e60000;
+    font-size: 2rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 20px;
+} 
+
+.voda-right h5{
+    color: #e60000 !important;
+    font-weight: 700;
+    margin-top: 60px !important;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.vodaBeneficos{
+    margin-top: 30px;
+}
+
+.vodaBeneficos .list-unstyled{
+    margin-top: 20px;
+}
+
+.vodaBeneficos .list-unstyled li{
+    font-size: 1.1rem !important;
+}
+
+.vodaBeneficos .fa-check{
+    font-size: 0.7rem;
+    margin-right: 2px;
+    color: #e60000 !important;
+    font-weight: bold;
+}
+
+.vodaBeneficos i{
+    font-size: 3rem;
+    color: #333333;
+}
+
+.vodacom .btn-primary{
+    background-color: #e60000 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    border: none !important;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.vodacom .btn-primary:hover{
+    background-color: transparent !important;
+    color: #e60000 !important;
+    border: 1px solid #e60000 !important;
+    text-transform: uppercase;
+}
+
+/*--Partners--*/
+
+.partners{
+    padding: 80px 0;
+}
+
+.imagem{
+    width: 200px!important;
+    height: 133px!important;
+    object-fit: cover;
+    object-position: center center;
+}
+.partners .row{
+    margin-top: 40px;
+}
+/*--Footer--*/
+.footer{
+    background: #2e2e2e;
+    padding: 100px 0;
+}
+
+.footer .col-md-4{
+     padding-left: 60px;
+}
+.footer h3{
+    font-size: 1.2rem!important;
+    margin-top: 15px!important;
+    color: #d9d9d9!important;
+    font-weight: normal!important;
+    text-transform: uppercase;
+ }
+
+.footer span{
+     font-weight: 800;
+     color: #fff;
+}
+.footer li{
+    color: #bfbfbf !important;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.list-unstyled i{
+    padding-right: 5px;
+}
+.social li{
+    display: inline-block;
+}
+
+.social i{
+    color: #d9d9d9;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 11px;
+    width: 40px;
+    height: 40px;
+}
+.social .blue{
+    background: #3366cc;
+}
+.social .link{
+    background: #006699;
+}
+.social .twi{
+    background: #00bfff;
+}
+.social .insta{
+    background: #86592d;
+}
+.footer i{
+    font-weight: 800;
+    color: #fff;
+}
+footer{
+    background: #2e2e2e;
+    overflow: hidden;
+    border-top: 1px solid #808080;
+}
+footer p{
+    padding-top: 10px;
+    color: #999999 !important;
+  
+}
+footer a{
+      color: #999999 !important;
+      text-decoration: underline;
+}
+footer a:hover{
+    color: #B27900;
+}
+
+/*-------TECH TAB------*/
+.top-header{
+    padding: 100px 0 40px 0;
+    background: url(../img/hero-all.jpg) no-repeat fixed 100%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.top-header .overlay{
+    position: absolute;
+    width: 100%;
+    height: 398px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 102,.8);
+    z-index: 2;
+}
+
+.top-header-box{
+  margin-top: 100px;
+}
+
+.top-header-box h2{
+    color: #e6e6e6!important;
+    position: relative;
+    z-index: 3;
+    font-size: 4rem !important;
+    font-weight: 300 !important;
+}
+
+.top-header-box p{
+     color: #fff!important;
+}
+.page{
+    padding: 100px 0;
+}
+
+.box-lap{
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.loja-sep{
+    margin-bottom: 20px;
+}
+
+/*---Media Queries---*/
+@media screen and (max-width: 768px){
+    .navbar-brand{
+      width: 80px;
+    }
+
+    .hero-caption{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    .hero-caption h1{
+        font-size: 1.7rem;
+    }
+
+    .navbar-light .navbar-nav .active{
+        border-bottom: none !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 15px !important;
+    }
+
+    .hero-caption h1:after{
+          width:50px;
+         }
+    p,li{
+        font-size: 0.875rem !important;
+    }
+
+    h2{
+        font-size: 2.4rem!important;
+    }
+
+    .box-resposive{
+        margin: 30px 0;
+    }
+
+    .services{
+        padding: 80px 0;
+    }
+
+    .vodacom{
+        padding: 80px 0;
+    }
+
+    .vodacom h2{
+        font-size: 2rem !important;
+    }
+
+    .voda-right{
+        margin-top: 20px;
+    }
+
+    .voda-right h5{
+        font-size: 1.3rem;
+        margin-top: 50px !important;
+    }
+
+    .vodaBeneficos .list-unstyled li{
+        font-size: 0.875rem !important;
+    }
+
+    .vodaBeneficos .fa-check{
+        font-size: 0.625rem;
+    }
+
+    .vodacom .btn-primary{
+        font-size: 1rem !important;
+    }
+
+    .voda_voice{
+        margin-top: 5px;
+    }
+
+    .voice{
+        margin-top: 30px;
+    }
+
+    .partners{
+        padding: 50px 0;
+    }
+
+    .imagem{
+        width: 200px!important;
+        height: 133px!important;
+        object-fit: cover;
+        object-position: center center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .top-header-box{
+        margin-top: 120px;
+    }
+
+    .top-header-box h2{
+        font-size: 2rem !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
