@@ -35,19 +35,25 @@
               }
             });        
 
+	   
+      // to add compressed class to the menu on scroll
 			$(document).ready(function() {
 			  $(window).on("scroll", function() {
 			    if ($(window).scrollTop() >= 20) {
-			      $(".navbar").addClass("compressed");
+			      $(".navbar, .navbar-toggler").addClass("compressed");
 			    } else {
-			      $(".navbar").removeClass("compressed");
+			      $(".navbar, .navbar-toggler").removeClass("compressed");
 			    }
 			  });
-			});
 
+       // to add preloading on a page load 
+        setTimeout(function() {
+          $("body, html").removeClass("no-scroll");
+          $(".spinner-ctn").hide();
+        }, 2000);
+  });
 
-
-
+   
 
 
 
